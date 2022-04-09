@@ -1,0 +1,239 @@
+/*
+Cores:
+    Azul #F0F8FF
+    Cinza #363636
+Fonte:
+    monospace
+*/
+
+* {
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #F0F8FF;
+    color: #363636 ;
+}
+
+#logo img {
+    height: 40px;
+    background: none;
+}
+
+#navbar {
+    padding: 1.2em 1.4em;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #363636;
+}
+/* navbar */
+#navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+#navbar ul li {
+    margin-left: 3em;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+#navbar ul li a:hover {
+    color: #4169E1;
+}
+
+/* container */
+.container {
+    min-height: 60vh;
+    padding: 2em;
+}
+
+/*Criar Mensagens */
+.message-form-container a {
+    color: #4169E1;
+}
+
+.message-form-container a:hover {
+    color: #363636;
+}
+
+.message-form-container h1 {
+    margin: 1em 0;
+    padding-left: 1em;
+    color: #363636;
+    border-left: 8px solid #4169E1;
+}
+
+.message-form-container form {
+    max-width: 30%;
+    margin-top: 1em;
+}
+
+/* My message */
+.title-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5em;
+}
+
+.title-container h2 {
+    border-left: 8px solid #4169E1;
+    padding: 10px;
+}
+
+.myMassage h3 {
+    margin-bottom: 1.5em;
+}
+
+.myMassage ul {
+    list-style: none;
+}
+
+.myMassage li {
+    padding: 12px;
+    border-bottom: 1px solid #4169E1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.myMassage .label {
+    font-weight: bold;
+    color: #4169E1;
+    margin-right: 2em;
+}
+
+.myMassage .actions {
+    display: flex;
+}
+
+.myMassage .actions .btn {
+    margin: 0 0.5em;
+}
+
+.myMassage p a {
+    color: #4169E1;
+}
+
+/* home */
+.home-header {
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.home-header h1 {
+    margin-bottom: 1em;
+}
+
+.messages-container {
+
+    padding: 0.5em;
+    max-width: 50%;
+    margin: 0 auto 1em;
+}
+
+div .title-home {
+    border-bottom: 1px solid #363636;
+    font-size: 20px;
+    margin-top: 1em;
+}
+
+figcaption {
+    color: #4169E1;
+    font-size: 10px;
+}
+
+
+
+/* footer */
+footer {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 3px solid #363636;
+}
+
+span {
+    font-weight: bold;
+    color: #4169E1;
+}
+
+/* Flash message */
+.message {
+    padding: 1em;
+    color: #F0F8FF;
+    background-color: #363636;
+    border-radius: 5px;
+    text-align: center;
+    margin: 0 auto 2em;
+    max-width: 60%;
+}
+
+/* login and register */
+.auth-container {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-container h2 {
+    margin-bottom: 1em;
+    padding-left: 1em;
+    color: #363636;
+    border-left: 8px solid #4169E1;
+    width: 100px;
+}
+
+.auth-container a {
+    color: #4169E1;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+.form-control label {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.form-control input, .form-control textarea {
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #4169E1;
+    transition: 0.5s;
+}
+
+.form-control input:hover, .form-control textarea:hover {
+    border: 1px solid #363636;
+}
+
+form input[type='submit'], .btn {
+    background-color: #4169E1;
+    color: #F0F8FF;
+    border: none;
+    padding: 0.5em 2em;
+    margin-bottom: 1em;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+form input[type='submit']:hover, .btn:hover {
+    background-color: #363636;
+}

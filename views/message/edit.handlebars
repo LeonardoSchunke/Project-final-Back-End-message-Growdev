@@ -1,0 +1,12 @@
+<div class="message-form-container">
+    <a href="/message/myMessage">Voltar</a>
+    <h1>Editando minha mensagem:</h1>
+    <form action="/message/edit" method="POST">
+    <input type="hidden" name="id" id="{{message.id}}">
+        <div class="form-control">
+            <label for="title">Mensagem:</label>
+            <input type="text" name="title" placeholder="Digite sua mensagem..." value="{{message.id}}">
+        </div>
+        <input type="submit" value="Editar mensagem">
+    </form>
+</div>

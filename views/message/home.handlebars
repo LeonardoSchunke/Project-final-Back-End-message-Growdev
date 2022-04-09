@@ -1,0 +1,11 @@
+<div class="home-header">
+    <h1>Todas as mensagens</h1>
+</div>
+<div class="messages-container">
+    {{#each messages}}
+    <div class="title-home">
+        {{this.title}}
+    </div>
+    <figcaption>Por <span class="user-create">{{this.User.name}}</span></figcaption>
+    {{/each}}
+</div>

@@ -1,0 +1,23 @@
+<div class="myMassage">
+    <div class="title-container">
+        <h2>Minhas Mensagens</h2>
+        <a href="/message/add" class="btn">Criar Mensagem</a>
+    </div>
+    <ul>
+        {{#each messages}}
+            <li>
+                <span class="label">{{this.title}}</span>
+                <span class="actions">
+                    <a href="/message/edit/{{this.id}}" class="btn">Editar</a>
+                    <form action="/message/remove" method="POST">
+                        <input type="hidden" name="id" id="{{this.id}}">
+                        <input type="submit" value="Excluir" class="btn">
+                    </form>
+                </span>
+            </li>
+        {{/each}}
+    </ul>
+    {{#if emptyMessage}}
+        <p>Escreva suas Mensagens <a href="/message/add">Por aqui!</a></p>
+    {{/if}}
+</div>
